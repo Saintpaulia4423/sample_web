@@ -3,12 +3,15 @@
     <head>
         <title>HTMLタグ一覧</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
+
+
     </head>
     <body>
-        <div style="text-align: right;">
-            <a href="index.html">homeページ</a>
-            <a href="tags.html" style="margin: 0 0 0 10px;">HTMLタグ一覧</a>
-            <a href="moby_dick.html" style="margin: 0 0 0 10px;">読書案内『Moby Dick』</a>
+        <div id="main-nav" class="nav-menu">
+            <a href="index.html" class="nav-space">homeページ</a>
+            <a href="tags.html" class="nav-space">HTMLタグ一覧</a>
+            <a href="moby_dick.html" class="nav-space">読書案内『Moby Dick』</a>
         </div>
 
         <h1>重要なHTMLタグ一覧</h1>
@@ -66,18 +69,14 @@
             <tr>
                 <td><code>header</code></td>
                 <td>ヘッダー</td>
-                <td></td>
+                <td>文頭要素</td>
             </tr>
             <tr>
                 <td><code>div</code></td>
                 <td>ディビジョン</td>
-                <td></td>
+                <td>要素を分割する、そのままでは意味がない</td>
             </tr>
-            <tr>
-                <td><code>span</code></td>
-                <td>スパン</td>
-                <td></td>
-            </tr>
+
             <tr>
                 <td><code>ol</code></td>
                 <td>オーダードリスト</td>
@@ -92,6 +91,11 @@
                 <td><code>li</code></td>
                 <td>リスト</td>
                 <td>olおよびulで使うリスト要素</td>
+            </tr>
+            <tr>
+                <td><span>blockquote</span></td>
+                <td>ブロッククオート</td>
+                <td>ブロック要素としての定義</td>
             </tr>
         </table>
         
@@ -132,6 +136,53 @@
                 <td>画像を配置する</td>
                 <td><code>&lt;img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"&gt;</code></td>
                 <td><img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"></td>
+            </tr>
+            <tr>
+                <td><code>span</code></td>
+                <td>スパン</td>
+                <td>要素を追加する、そのままでは意味がない</td>
+            </tr>
+            <tr>
+                <td><code>style</code></td>
+                <td>スタイル（style）</td>
+                <td>テキストスタイルを定義する</td>
+                <td><code>&lt;span style="color: red;"&gt;赤い文字&lt;/span&gt;</code></td>
+                <td><span style="color: red;">赤い文字</span></td>
+            </Tr>
+        </table>
+
+        <h2>ドキュメントタグ（document tags）</h2>
+
+        <table>
+            <tr>
+                <td>HTMLタグ</td>
+                <td>タグ名</td>
+                <td>目的</td>
+            </tr>
+            <tr>
+                <td><code>html</code></td>
+                <td>HyperText Markup Language</td>
+                <td>HTMLとして定義するタグ</td>
+            </tr>
+            <tr>
+                <td><code>head</code></td>
+                <td>ヘッド</td>
+                <td>最初に読み込まれ、ページとしては表示されない要素</td>
+            </tr>
+            <tr>
+                <td><code>body</code></td>
+                <td>ボディー</td>
+                <td>Webページを構成する実際に表示される要素</td>
+            </tr>
+            <tr>
+                <td><code>title</code></td>
+                <td>タイトル</td>
+                <td>Webページのタイトルを定義する</td>
+            </tr>
+            <tr>
+                <td><code>meta</code></td>
+                <td>メタ</td>
+                <td>実体のないものを定義する</td>
             </tr>
         </table>
     </body>
