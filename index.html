@@ -3,13 +3,14 @@
     <head>
         <title>Railsチュートリアル「HTML編」</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
-        <div style="text-align: right;">
-            <a href="index.html">homeページ</a>
-            <a href="tags.html" style="margin-left: 10px;">HTMLタグ一覧</a>
-            <a href="moby_dick.html" style="margin: 0 0 0 10px;">読書案内『Moby Dick』</a>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-space">homeページ</a>
+            <a href="tags.html"  class="nav-space">HTMLタグ一覧</a>
+            <a href="moby_dick.html"  class="nav-space">読書案内『Moby Dick』</a>
         </div>
         <h1>Learn Enoughのあらまし</h1>
         <img src="images/kitten.jpg" alt="An adorable kitten">
@@ -38,7 +39,7 @@
             『Learn Enough to Be Dangerous』は<a href="https://railstutorial.jp/">Ruby on Railsチュートリアル</a>事業および<a href="https://www.softcover.io/">Softcover: 出版プラットフォーム</a>事業から必然的に生まれました。このページは、<a href="https://railstutorial.jp/html"><em>Railsチュートリアル「HTML編」</em></a>で用いるサンプルWebサイトの一部です。同署では、World Wide webで全面的に利用されている言語であるHTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）の基礎が学べます。
             そのほかのチュートリアル情報にご興味がある方は、<a href="https://railstutorial.jp/path">コンテンツ一覧</a>をどうぞご覧ください。
         </p>
-        <h2>創立メンバー</h2>
+        <h2 id="founders">創立メンバー</h2>
         <p>
             『Learn Enough to Be Dangerous』は2015年にマイケル・ハートル、リー・ドナヒュー…
             <strong>10億人</strong><em><strong>italic</strong></em>
@@ -65,7 +66,7 @@
         </p>
         <a href="https://learnenough.com/email">公式メーリングリストはこちらから！</a>
         <p>
-            <a href="https://twitter.com/RailsTutorialJP" target="_blank" rel="noopener" style="text-decoration: none;">
+            <a href="https://twitter.com/RailsTutorialJP" class="image-link" target="_blank" rel="noopener">
                 <img src="images/small_twitter_logo.png" alt="Twitter links">
             </a>
         </p>
